@@ -4,7 +4,7 @@ public class FizzBuzzer {
     
     public String execute(int number) {
         String result = "";
-        if (number % 3 == 0) {
+        if (number % 3 == 0 || Integer.toString(number).contains("3")) {
             result += "fizz";
         }
         if (number % 5 == 0) {

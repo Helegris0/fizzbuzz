@@ -36,5 +36,11 @@ public class FizzBuzzerTest {
         assertEquals("wizz", fizzBuzzer.execute(7));
         assertEquals("wizz", fizzBuzzer.execute(14));
     }
+    
+    @Test
+    public void executeShouldReturnFizzIfTheNumberContainsDigit3() {
+        assertEquals("fizz", fizzBuzzer.execute(13));
+        assertEquals("fizz", fizzBuzzer.execute(31));
+    }
 
 }

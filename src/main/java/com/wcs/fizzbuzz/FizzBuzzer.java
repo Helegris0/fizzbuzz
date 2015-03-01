@@ -3,16 +3,20 @@ package com.wcs.fizzbuzz;
 public class FizzBuzzer {
     
     public String execute(int number) {
-        if (number % 3 == 0 && number % 5 == 0) {
-            return "fizzbuzz";
+        String result = "";
+        if (number % 3 == 0) {
+            result += "fizz";
         }
-        else if (number % 3 == 0) {
-            return "fizz";
+        if (number % 5 == 0) {
+            result += "buzz";
         }
-        else if (number % 5 == 0) {
-            return "buzz";
+        if (number % 7 == 0) {
+            result += "wizz";
         }
-        return Integer.toString(number);
+        if (result.isEmpty()) {
+            result = Integer.toString(number);
+        }
+        return result;
     }
     
 }

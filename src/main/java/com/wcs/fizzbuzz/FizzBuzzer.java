@@ -10,7 +10,7 @@ public class FizzBuzzer {
         if (number % 5 == 0 || Integer.toString(number).contains("5")) {
             result += "buzz";
         }
-        if (number % 7 == 0) {
+        if (number % 7 == 0 || Integer.toString(number).contains("7")) {
             result += "wizz";
         }
         if (result.isEmpty()) {

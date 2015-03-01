@@ -53,5 +53,10 @@ public class FizzBuzzerTest {
     public void executeShouldReturnFizzBuzzIfTheNumberContainsDigits5And3() {
         assertEquals("fizzbuzz", fizzBuzzer.execute(53));
     }
+    
+    public void executeShouldReturnWizzIfTheNumberContainsDigit7() {
+        assertEquals("wizz", fizzBuzzer.execute(17));
+        assertEquals("wizz", fizzBuzzer.execute(47));
+    }
 
 }
